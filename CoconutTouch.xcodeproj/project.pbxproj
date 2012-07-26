@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C73B7DD915C1B7DA00564896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C73B7DD715C1B7DA00564896 /* InfoPlist.strings */; };
+		C73B7DE315C1B7DA00564896 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73B7DE215C1B7DA00564896 /* SenTestingKit.framework */; };
+		C73B7DE515C1B7DA00564896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73B7DE415C1B7DA00564896 /* UIKit.framework */; };
+		C73B7DE715C1B7DA00564896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73B7DE615C1B7DA00564896 /* Foundation.framework */; };
+		C73B7DEA15C1B7DA00564896 /* CoconutTouch.framework in Resources */ = {isa = PBXBuildFile; fileRef = C73B7DD215C1B7DA00564896 /* CoconutTouch.framework */; };
+		C73B7DF015C1B7DA00564896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C73B7DEE15C1B7DA00564896 /* InfoPlist.strings */; };
+		C73B7DF315C1B7DA00564896 /* CoconutTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C73B7DF215C1B7DA00564896 /* CoconutTouchTests.m */; };
+		C73B7E2615C1B97D00564896 /* CTAlertSequenceController.h in Headers */ = {isa = PBXBuildFile; fileRef = C73B7E0315C1B97D00564896 /* CTAlertSequenceController.h */; };
+		C73B7E2715C1B97D00564896 /* CTAlertSequenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73B7E0415C1B97D00564896 /* CTAlertSequenceController.m */; };
+		C73B7E2815C1B97D00564896 /* CTAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = C73B7E0515C1B97D00564896 /* CTAlertView.h */; };
+		C73B7E2915C1B97D00564896 /* CTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73B7E0615C1B97D00564896 /* CTAlertView.m */; };
+		C73B7E2A15C1B97D00564896 /* Alert_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E0815C1B97D00564896 /* Alert_bottom.png */; };
+		C73B7E2B15C1B97D00564896 /* Alert_bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E0915C1B97D00564896 /* Alert_bottom@2x.png */; };
+		C73B7E2C15C1B97D00564896 /* Alert_center.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E0A15C1B97D00564896 /* Alert_center.png */; };
+		C73B7E2D15C1B97D00564896 /* Alert_center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E0B15C1B97D00564896 /* Alert_center@2x.png */; };
+		C73B7E2E15C1B97D00564896 /* Alert_Long_OFF.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E0C15C1B97D00564896 /* Alert_Long_OFF.png */; };
+		C73B7E2F15C1B97D00564896 /* Alert_Long_OFF@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E0D15C1B97D00564896 /* Alert_Long_OFF@2x.png */; };
+		C73B7E3015C1B97D00564896 /* Alert_Long_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E0E15C1B97D00564896 /* Alert_Long_ON.png */; };
+		C73B7E3115C1B97D00564896 /* Alert_Long_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E0F15C1B97D00564896 /* Alert_Long_ON@2x.png */; };
+		C73B7E3215C1B97D00564896 /* Alert_top.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E1015C1B97D00564896 /* Alert_top.png */; };
+		C73B7E3315C1B97D00564896 /* Alert_top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E1115C1B97D00564896 /* Alert_top@2x.png */; };
+		C73B7E3415C1B97D00564896 /* Cancel_OFF.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E1215C1B97D00564896 /* Cancel_OFF.png */; };
+		C73B7E3515C1B97D00564896 /* Cancel_OFF@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E1315C1B97D00564896 /* Cancel_OFF@2x.png */; };
+		C73B7E3615C1B97D00564896 /* Cancel_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E1415C1B97D00564896 /* Cancel_ON.png */; };
+		C73B7E3715C1B97D00564896 /* Cancel_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E1515C1B97D00564896 /* Cancel_ON@2x.png */; };
+		C73B7E3815C1B97D00564896 /* Other_OFF.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E1615C1B97D00564896 /* Other_OFF.png */; };
+		C73B7E3915C1B97D00564896 /* Other_OFF@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E1715C1B97D00564896 /* Other_OFF@2x.png */; };
+		C73B7E3A15C1B97D00564896 /* Other_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E1815C1B97D00564896 /* Other_ON.png */; };
+		C73B7E3B15C1B97D00564896 /* Other_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C73B7E1915C1B97D00564896 /* Other_ON@2x.png */; };
+		C73B7E3C15C1B97D00564896 /* CTPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = C73B7E1B15C1B97D00564896 /* CTPageControl.h */; };
+		C73B7E3D15C1B97D00564896 /* CTPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C73B7E1C15C1B97D00564896 /* CTPageControl.m */; };
+		C73B7E3E15C1B97D00564896 /* CTPieProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = C73B7E1E15C1B97D00564896 /* CTPieProgressView.h */; };
+		C73B7E3F15C1B97D00564896 /* CTPieProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73B7E1F15C1B97D00564896 /* CTPieProgressView.m */; };
+		C73B7E4015C1B97D00564896 /* CTProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = C73B7E2115C1B97D00564896 /* CTProgressView.h */; };
+		C73B7E4115C1B97D00564896 /* CTProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73B7E2215C1B97D00564896 /* CTProgressView.m */; };
+		C73B7E4215C1B97D00564896 /* CTTimeScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = C73B7E2415C1B97D00564896 /* CTTimeScrollView.h */; };
+		C73B7E4315C1B97D00564896 /* CTTimeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73B7E2515C1B97D00564896 /* CTTimeScrollView.m */; };
+		C73B7E4C15C1B98800564896 /* CLLocation+CTLocalizer.h in Headers */ = {isa = PBXBuildFile; fileRef = C73B7E4415C1B98800564896 /* CLLocation+CTLocalizer.h */; };
+		C73B7E4D15C1B98800564896 /* CLLocation+CTLocalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C73B7E4515C1B98800564896 /* CLLocation+CTLocalizer.m */; };
+		C73B7E4E15C1B98800564896 /* UIColor+RGB.h in Headers */ = {isa = PBXBuildFile; fileRef = C73B7E4615C1B98800564896 /* UIColor+RGB.h */; };
+		C73B7E4F15C1B98800564896 /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = C73B7E4715C1B98800564896 /* UIColor+RGB.m */; };
+		C73B7E5015C1B98800564896 /* UILabel+FixedSize.h in Headers */ = {isa = PBXBuildFile; fileRef = C73B7E4815C1B98800564896 /* UILabel+FixedSize.h */; };
+		C73B7E5115C1B98800564896 /* UILabel+FixedSize.m in Sources */ = {isa = PBXBuildFile; fileRef = C73B7E4915C1B98800564896 /* UILabel+FixedSize.m */; };
+		C73B7E5215C1B98800564896 /* UIView+FrameProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = C73B7E4A15C1B98800564896 /* UIView+FrameProperties.h */; };
+		C73B7E5315C1B98800564896 /* UIView+FrameProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C73B7E4B15C1B98800564896 /* UIView+FrameProperties.m */; };
+		C783A29515C1DBB7008D14A0 /* Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = C783A29415C1DBB7008D14A0 /* Logging.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C73B7DE815C1B7DA00564896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C73B7DC515C1B7DA00564896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C73B7DD115C1B7DA00564896;
+			remoteInfo = CoconutTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C73B7DD215C1B7DA00564896 /* CoconutTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoconutTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73B7DD615C1B7DA00564896 /* CoconutTouch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoconutTouch-Info.plist"; sourceTree = "<group>"; };
+		C73B7DD815C1B7DA00564896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C73B7DDA15C1B7DA00564896 /* CoconutTouch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoconutTouch-Prefix.pch"; sourceTree = "<group>"; };
+		C73B7DE015C1B7DA00564896 /* CoconutTouchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoconutTouchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73B7DE215C1B7DA00564896 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C73B7DE415C1B7DA00564896 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C73B7DE615C1B7DA00564896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C73B7DED15C1B7DA00564896 /* CoconutTouchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoconutTouchTests-Info.plist"; sourceTree = "<group>"; };
+		C73B7DEF15C1B7DA00564896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C73B7DF115C1B7DA00564896 /* CoconutTouchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoconutTouchTests.h; sourceTree = "<group>"; };
+		C73B7DF215C1B7DA00564896 /* CoconutTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoconutTouchTests.m; sourceTree = "<group>"; };
+		C73B7E0315C1B97D00564896 /* CTAlertSequenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAlertSequenceController.h; sourceTree = "<group>"; };
+		C73B7E0415C1B97D00564896 /* CTAlertSequenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAlertSequenceController.m; sourceTree = "<group>"; };
+		C73B7E0515C1B97D00564896 /* CTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAlertView.h; sourceTree = "<group>"; };
+		C73B7E0615C1B97D00564896 /* CTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAlertView.m; sourceTree = "<group>"; };
+		C73B7E0815C1B97D00564896 /* Alert_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alert_bottom.png; sourceTree = "<group>"; };
+		C73B7E0915C1B97D00564896 /* Alert_bottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alert_bottom@2x.png"; sourceTree = "<group>"; };
+		C73B7E0A15C1B97D00564896 /* Alert_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alert_center.png; sourceTree = "<group>"; };
+		C73B7E0B15C1B97D00564896 /* Alert_center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alert_center@2x.png"; sourceTree = "<group>"; };
+		C73B7E0C15C1B97D00564896 /* Alert_Long_OFF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alert_Long_OFF.png; sourceTree = "<group>"; };
+		C73B7E0D15C1B97D00564896 /* Alert_Long_OFF@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alert_Long_OFF@2x.png"; sourceTree = "<group>"; };
+		C73B7E0E15C1B97D00564896 /* Alert_Long_ON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alert_Long_ON.png; sourceTree = "<group>"; };
+		C73B7E0F15C1B97D00564896 /* Alert_Long_ON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alert_Long_ON@2x.png"; sourceTree = "<group>"; };
+		C73B7E1015C1B97D00564896 /* Alert_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alert_top.png; sourceTree = "<group>"; };
+		C73B7E1115C1B97D00564896 /* Alert_top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alert_top@2x.png"; sourceTree = "<group>"; };
+		C73B7E1215C1B97D00564896 /* Cancel_OFF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel_OFF.png; sourceTree = "<group>"; };
+		C73B7E1315C1B97D00564896 /* Cancel_OFF@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cancel_OFF@2x.png"; sourceTree = "<group>"; };
+		C73B7E1415C1B97D00564896 /* Cancel_ON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel_ON.png; sourceTree = "<group>"; };
+		C73B7E1515C1B97D00564896 /* Cancel_ON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cancel_ON@2x.png"; sourceTree = "<group>"; };
+		C73B7E1615C1B97D00564896 /* Other_OFF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Other_OFF.png; sourceTree = "<group>"; };
+		C73B7E1715C1B97D00564896 /* Other_OFF@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Other_OFF@2x.png"; sourceTree = "<group>"; };
+		C73B7E1815C1B97D00564896 /* Other_ON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Other_ON.png; sourceTree = "<group>"; };
+		C73B7E1915C1B97D00564896 /* Other_ON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Other_ON@2x.png"; sourceTree = "<group>"; };
+		C73B7E1B15C1B97D00564896 /* CTPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPageControl.h; sourceTree = "<group>"; };
+		C73B7E1C15C1B97D00564896 /* CTPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPageControl.m; sourceTree = "<group>"; };
+		C73B7E1E15C1B97D00564896 /* CTPieProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPieProgressView.h; sourceTree = "<group>"; };
+		C73B7E1F15C1B97D00564896 /* CTPieProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPieProgressView.m; sourceTree = "<group>"; };
+		C73B7E2115C1B97D00564896 /* CTProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTProgressView.h; sourceTree = "<group>"; };
+		C73B7E2215C1B97D00564896 /* CTProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTProgressView.m; sourceTree = "<group>"; };
+		C73B7E2415C1B97D00564896 /* CTTimeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTTimeScrollView.h; sourceTree = "<group>"; };
+		C73B7E2515C1B97D00564896 /* CTTimeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTTimeScrollView.m; sourceTree = "<group>"; };
+		C73B7E4415C1B98800564896 /* CLLocation+CTLocalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+CTLocalizer.h"; sourceTree = "<group>"; };
+		C73B7E4515C1B98800564896 /* CLLocation+CTLocalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+CTLocalizer.m"; sourceTree = "<group>"; };
+		C73B7E4615C1B98800564896 /* UIColor+RGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGB.h"; sourceTree = "<group>"; };
+		C73B7E4715C1B98800564896 /* UIColor+RGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGB.m"; sourceTree = "<group>"; };
+		C73B7E4815C1B98800564896 /* UILabel+FixedSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FixedSize.h"; sourceTree = "<group>"; };
+		C73B7E4915C1B98800564896 /* UILabel+FixedSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FixedSize.m"; sourceTree = "<group>"; };
+		C73B7E4A15C1B98800564896 /* UIView+FrameProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameProperties.h"; sourceTree = "<group>"; };
+		C73B7E4B15C1B98800564896 /* UIView+FrameProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameProperties.m"; sourceTree = "<group>"; };
+		C783A29415C1DBB7008D14A0 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C73B7DCC15C1B7DA00564896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73B7DDC15C1B7DA00564896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73B7DE315C1B7DA00564896 /* SenTestingKit.framework in Frameworks */,
+				C73B7DE515C1B7DA00564896 /* UIKit.framework in Frameworks */,
+				C73B7DE715C1B7DA00564896 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C73B7DC315C1B7DA00564896 = {
+			isa = PBXGroup;
+			children = (
+				C73B7DD415C1B7DA00564896 /* CoconutTouch */,
+				C73B7DEB15C1B7DA00564896 /* CoconutTouchTests */,
+				C73B7DE115C1B7DA00564896 /* Frameworks */,
+				C73B7DD315C1B7DA00564896 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C73B7DD315C1B7DA00564896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7DD215C1B7DA00564896 /* CoconutTouch.framework */,
+				C73B7DE015C1B7DA00564896 /* CoconutTouchTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C73B7DD415C1B7DA00564896 /* CoconutTouch */ = {
+			isa = PBXGroup;
+			children = (
+				C783A29215C1DB9D008D14A0 /* 3rdPartyUtils */,
+				C73B7E0115C1B85600564896 /* Categories */,
+				C73B7DFF15C1B84700564896 /* UIControls */,
+				C73B7DD515C1B7DA00564896 /* Supporting Files */,
+			);
+			path = CoconutTouch;
+			sourceTree = "<group>";
+		};
+		C73B7DD515C1B7DA00564896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7DD615C1B7DA00564896 /* CoconutTouch-Info.plist */,
+				C73B7DD715C1B7DA00564896 /* InfoPlist.strings */,
+				C73B7DDA15C1B7DA00564896 /* CoconutTouch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C73B7DE115C1B7DA00564896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7DE215C1B7DA00564896 /* SenTestingKit.framework */,
+				C73B7DE415C1B7DA00564896 /* UIKit.framework */,
+				C73B7DE615C1B7DA00564896 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C73B7DEB15C1B7DA00564896 /* CoconutTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7DF115C1B7DA00564896 /* CoconutTouchTests.h */,
+				C73B7DF215C1B7DA00564896 /* CoconutTouchTests.m */,
+				C73B7DEC15C1B7DA00564896 /* Supporting Files */,
+			);
+			path = CoconutTouchTests;
+			sourceTree = "<group>";
+		};
+		C73B7DEC15C1B7DA00564896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7DED15C1B7DA00564896 /* CoconutTouchTests-Info.plist */,
+				C73B7DEE15C1B7DA00564896 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C73B7DFF15C1B84700564896 /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7E0215C1B97D00564896 /* CTAlertSequenceController */,
+				C73B7E1A15C1B97D00564896 /* CTPageControl */,
+				C73B7E1D15C1B97D00564896 /* CTPieProgressView */,
+				C73B7E2015C1B97D00564896 /* CTProgressView */,
+				C73B7E2315C1B97D00564896 /* CTTimeScroll */,
+			);
+			path = UIControls;
+			sourceTree = "<group>";
+		};
+		C73B7E0115C1B85600564896 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7E4415C1B98800564896 /* CLLocation+CTLocalizer.h */,
+				C73B7E4515C1B98800564896 /* CLLocation+CTLocalizer.m */,
+				C73B7E4615C1B98800564896 /* UIColor+RGB.h */,
+				C73B7E4715C1B98800564896 /* UIColor+RGB.m */,
+				C73B7E4815C1B98800564896 /* UILabel+FixedSize.h */,
+				C73B7E4915C1B98800564896 /* UILabel+FixedSize.m */,
+				C73B7E4A15C1B98800564896 /* UIView+FrameProperties.h */,
+				C73B7E4B15C1B98800564896 /* UIView+FrameProperties.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C73B7E0215C1B97D00564896 /* CTAlertSequenceController */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7E0315C1B97D00564896 /* CTAlertSequenceController.h */,
+				C73B7E0415C1B97D00564896 /* CTAlertSequenceController.m */,
+				C73B7E0515C1B97D00564896 /* CTAlertView.h */,
+				C73B7E0615C1B97D00564896 /* CTAlertView.m */,
+				C73B7E0715C1B97D00564896 /* Images */,
+			);
+			path = CTAlertSequenceController;
+			sourceTree = "<group>";
+		};
+		C73B7E0715C1B97D00564896 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7E0815C1B97D00564896 /* Alert_bottom.png */,
+				C73B7E0915C1B97D00564896 /* Alert_bottom@2x.png */,
+				C73B7E0A15C1B97D00564896 /* Alert_center.png */,
+				C73B7E0B15C1B97D00564896 /* Alert_center@2x.png */,
+				C73B7E0C15C1B97D00564896 /* Alert_Long_OFF.png */,
+				C73B7E0D15C1B97D00564896 /* Alert_Long_OFF@2x.png */,
+				C73B7E0E15C1B97D00564896 /* Alert_Long_ON.png */,
+				C73B7E0F15C1B97D00564896 /* Alert_Long_ON@2x.png */,
+				C73B7E1015C1B97D00564896 /* Alert_top.png */,
+				C73B7E1115C1B97D00564896 /* Alert_top@2x.png */,
+				C73B7E1215C1B97D00564896 /* Cancel_OFF.png */,
+				C73B7E1315C1B97D00564896 /* Cancel_OFF@2x.png */,
+				C73B7E1415C1B97D00564896 /* Cancel_ON.png */,
+				C73B7E1515C1B97D00564896 /* Cancel_ON@2x.png */,
+				C73B7E1615C1B97D00564896 /* Other_OFF.png */,
+				C73B7E1715C1B97D00564896 /* Other_OFF@2x.png */,
+				C73B7E1815C1B97D00564896 /* Other_ON.png */,
+				C73B7E1915C1B97D00564896 /* Other_ON@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C73B7E1A15C1B97D00564896 /* CTPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7E1B15C1B97D00564896 /* CTPageControl.h */,
+				C73B7E1C15C1B97D00564896 /* CTPageControl.m */,
+			);
+			path = CTPageControl;
+			sourceTree = "<group>";
+		};
+		C73B7E1D15C1B97D00564896 /* CTPieProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7E1E15C1B97D00564896 /* CTPieProgressView.h */,
+				C73B7E1F15C1B97D00564896 /* CTPieProgressView.m */,
+			);
+			path = CTPieProgressView;
+			sourceTree = "<group>";
+		};
+		C73B7E2015C1B97D00564896 /* CTProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7E2115C1B97D00564896 /* CTProgressView.h */,
+				C73B7E2215C1B97D00564896 /* CTProgressView.m */,
+			);
+			path = CTProgressView;
+			sourceTree = "<group>";
+		};
+		C73B7E2315C1B97D00564896 /* CTTimeScroll */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7E2415C1B97D00564896 /* CTTimeScrollView.h */,
+				C73B7E2515C1B97D00564896 /* CTTimeScrollView.m */,
+			);
+			path = CTTimeScroll;
+			sourceTree = "<group>";
+		};
+		C783A29215C1DB9D008D14A0 /* 3rdPartyUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C783A29415C1DBB7008D14A0 /* Logging.h */,
+			);
+			path = 3rdPartyUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C73B7DCD15C1B7DA00564896 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73B7E2615C1B97D00564896 /* CTAlertSequenceController.h in Headers */,
+				C73B7E2815C1B97D00564896 /* CTAlertView.h in Headers */,
+				C73B7E3C15C1B97D00564896 /* CTPageControl.h in Headers */,
+				C73B7E3E15C1B97D00564896 /* CTPieProgressView.h in Headers */,
+				C73B7E4015C1B97D00564896 /* CTProgressView.h in Headers */,
+				C73B7E4215C1B97D00564896 /* CTTimeScrollView.h in Headers */,
+				C73B7E4C15C1B98800564896 /* CLLocation+CTLocalizer.h in Headers */,
+				C73B7E4E15C1B98800564896 /* UIColor+RGB.h in Headers */,
+				C73B7E5015C1B98800564896 /* UILabel+FixedSize.h in Headers */,
+				C73B7E5215C1B98800564896 /* UIView+FrameProperties.h in Headers */,
+				C783A29515C1DBB7008D14A0 /* Logging.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C73B7DD115C1B7DA00564896 /* CoconutTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C73B7DF615C1B7DA00564896 /* Build configuration list for PBXNativeTarget "CoconutTouch" */;
+			buildPhases = (
+				C73B7DCA15C1B7DA00564896 /* ShellScript */,
+				C73B7DCB15C1B7DA00564896 /* Sources */,
+				C73B7DCC15C1B7DA00564896 /* Frameworks */,
+				C73B7DCD15C1B7DA00564896 /* Headers */,
+				C73B7DCE15C1B7DA00564896 /* Resources */,
+				C73B7DCF15C1B7DA00564896 /* ShellScript */,
+				C73B7DD015C1B7DA00564896 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoconutTouch;
+			productName = CoconutTouch;
+			productReference = C73B7DD215C1B7DA00564896 /* CoconutTouch.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C73B7DDF15C1B7DA00564896 /* CoconutTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C73B7DF915C1B7DA00564896 /* Build configuration list for PBXNativeTarget "CoconutTouchTests" */;
+			buildPhases = (
+				C73B7DDB15C1B7DA00564896 /* Sources */,
+				C73B7DDC15C1B7DA00564896 /* Frameworks */,
+				C73B7DDD15C1B7DA00564896 /* Resources */,
+				C73B7DDE15C1B7DA00564896 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C73B7DE915C1B7DA00564896 /* PBXTargetDependency */,
+			);
+			name = CoconutTouchTests;
+			productName = CoconutTouchTests;
+			productReference = C73B7DE015C1B7DA00564896 /* CoconutTouchTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C73B7DC515C1B7DA00564896 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = CocoLab.pl;
+			};
+			buildConfigurationList = C73B7DC815C1B7DA00564896 /* Build configuration list for PBXProject "CoconutTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C73B7DC315C1B7DA00564896;
+			productRefGroup = C73B7DD315C1B7DA00564896 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C73B7DD115C1B7DA00564896 /* CoconutTouch */,
+				C73B7DDF15C1B7DA00564896 /* CoconutTouchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C73B7DCE15C1B7DA00564896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73B7DD915C1B7DA00564896 /* InfoPlist.strings in Resources */,
+				C73B7E2A15C1B97D00564896 /* Alert_bottom.png in Resources */,
+				C73B7E2B15C1B97D00564896 /* Alert_bottom@2x.png in Resources */,
+				C73B7E2C15C1B97D00564896 /* Alert_center.png in Resources */,
+				C73B7E2D15C1B97D00564896 /* Alert_center@2x.png in Resources */,
+				C73B7E2E15C1B97D00564896 /* Alert_Long_OFF.png in Resources */,
+				C73B7E2F15C1B97D00564896 /* Alert_Long_OFF@2x.png in Resources */,
+				C73B7E3015C1B97D00564896 /* Alert_Long_ON.png in Resources */,
+				C73B7E3115C1B97D00564896 /* Alert_Long_ON@2x.png in Resources */,
+				C73B7E3215C1B97D00564896 /* Alert_top.png in Resources */,
+				C73B7E3315C1B97D00564896 /* Alert_top@2x.png in Resources */,
+				C73B7E3415C1B97D00564896 /* Cancel_OFF.png in Resources */,
+				C73B7E3515C1B97D00564896 /* Cancel_OFF@2x.png in Resources */,
+				C73B7E3615C1B97D00564896 /* Cancel_ON.png in Resources */,
+				C73B7E3715C1B97D00564896 /* Cancel_ON@2x.png in Resources */,
+				C73B7E3815C1B97D00564896 /* Other_OFF.png in Resources */,
+				C73B7E3915C1B97D00564896 /* Other_OFF@2x.png in Resources */,
+				C73B7E3A15C1B97D00564896 /* Other_ON.png in Resources */,
+				C73B7E3B15C1B97D00564896 /* Other_ON@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73B7DDD15C1B7DA00564896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73B7DEA15C1B7DA00564896 /* CoconutTouch.framework in Resources */,
+				C73B7DF015C1B7DA00564896 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C73B7DCA15C1B7DA00564896 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n";
+		};
+		C73B7DCF15C1B7DA00564896 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "HEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Versions/$FRAMEWORK_VERSION/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$(find $FRAMEWORK_HEADERS_DIR/. -not -type d 2> /dev/null | sed -e \"s@.*/@@g\")\n\nFIND_OPTS=\"\"\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n  if [ -n \"$FIND_OPTS\" ]; then\n    FIND_OPTS=\"$FIND_OPTS -o\"\n  fi\n  FIND_OPTS=\"$FIND_OPTS -name '$PUBLIC_HEADER'\"\ndone\n\nif [ -n \"$FIND_OPTS\" ]; then\n  for ORIG_HEADER in $(eval \"find $HEADERS_ROOT/. $FIND_OPTS\" 2> /dev/null | sed -e \"s@^$HEADERS_ROOT/./@@g\"); do\n    PUBLIC_HEADER=$(basename $ORIG_HEADER)\n    RELATIVE_PATH=$(dirname $ORIG_HEADER)\n    if [ -e $FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER ]; then\n      mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n      mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\n    fi\n  done\nfi\n";
+		};
+		C73B7DD015C1B7DA00564896 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Make sure the other platform gets built\n\necho \"Build other platform\"\n\necho xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n\n\n# Build the fat static library binary\n\necho \"Create universal static library\"\n\necho \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\necho mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nmv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n\n\n# Build framework structure\n\necho \"Build symlinks\"\n\necho ln -sfh A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\nln -sfh A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\necho ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\necho ln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\nln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\necho ln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\nln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\n\n\n# Link to binary for unit tests\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework\"\nln -sfh \"../${WRAPPER_NAME}/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework/.fake_fw_testing\"\n\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\n# Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n\necho \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n\necho rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\necho cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n";
+		};
+		C73B7DDE15C1B7DA00564896 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C73B7DCB15C1B7DA00564896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73B7E2715C1B97D00564896 /* CTAlertSequenceController.m in Sources */,
+				C73B7E2915C1B97D00564896 /* CTAlertView.m in Sources */,
+				C73B7E3D15C1B97D00564896 /* CTPageControl.m in Sources */,
+				C73B7E3F15C1B97D00564896 /* CTPieProgressView.m in Sources */,
+				C73B7E4115C1B97D00564896 /* CTProgressView.m in Sources */,
+				C73B7E4315C1B97D00564896 /* CTTimeScrollView.m in Sources */,
+				C73B7E4D15C1B98800564896 /* CLLocation+CTLocalizer.m in Sources */,
+				C73B7E4F15C1B98800564896 /* UIColor+RGB.m in Sources */,
+				C73B7E5115C1B98800564896 /* UILabel+FixedSize.m in Sources */,
+				C73B7E5315C1B98800564896 /* UIView+FrameProperties.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73B7DDB15C1B7DA00564896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73B7DF315C1B7DA00564896 /* CoconutTouchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C73B7DE915C1B7DA00564896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C73B7DD115C1B7DA00564896 /* CoconutTouch */;
+			targetProxy = C73B7DE815C1B7DA00564896 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C73B7DD715C1B7DA00564896 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C73B7DD815C1B7DA00564896 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C73B7DEE15C1B7DA00564896 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C73B7DEF15C1B7DA00564896 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C73B7DF415C1B7DA00564896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C73B7DF515C1B7DA00564896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C73B7DF715C1B7DA00564896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoconutTouch/CoconutTouch-Prefix.pch";
+				INFOPLIST_FILE = "CoconutTouch/CoconutTouch-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		C73B7DF815C1B7DA00564896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoconutTouch/CoconutTouch-Prefix.pch";
+				INFOPLIST_FILE = "CoconutTouch/CoconutTouch-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		C73B7DFA15C1B7DA00564896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoconutTouch/CoconutTouch-Prefix.pch";
+				INFOPLIST_FILE = "CoconutTouchTests/CoconutTouchTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					.fake_fw_testing,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C73B7DFB15C1B7DA00564896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoconutTouch/CoconutTouch-Prefix.pch";
+				INFOPLIST_FILE = "CoconutTouchTests/CoconutTouchTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					.fake_fw_testing,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C73B7DC815C1B7DA00564896 /* Build configuration list for PBXProject "CoconutTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73B7DF415C1B7DA00564896 /* Debug */,
+				C73B7DF515C1B7DA00564896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C73B7DF615C1B7DA00564896 /* Build configuration list for PBXNativeTarget "CoconutTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73B7DF715C1B7DA00564896 /* Debug */,
+				C73B7DF815C1B7DA00564896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C73B7DF915C1B7DA00564896 /* Build configuration list for PBXNativeTarget "CoconutTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73B7DFA15C1B7DA00564896 /* Debug */,
+				C73B7DFB15C1B7DA00564896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C73B7DC515C1B7DA00564896 /* Project object */;
+}
